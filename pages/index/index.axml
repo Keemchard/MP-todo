@@ -1,0 +1,30 @@
+<view class="main-con">
+  <view class="con">
+    <view class="todo-header">
+      <text>Mini Program Todo List</text>
+    </view>
+    <form class="todo-form" onSubmit="onSubmit">
+      <view>
+        <input class="add-input" placeholder="Add Todo" />
+      </view>
+      <view>
+        <button class="submit-btn" formType="submit">Add</button>
+      </view>
+    </form>
+    <view a:if="{{ globalTodos.length > 0 }}" class="todo-list">
+      <view a:for="{{ globalTodos }}">
+        <view class="todo-item">
+         - {{item.title}}
+        </view>
+      </view>
+    </view>
+    <view a:else class="todo-list">
+      No Todos Yet
+    </view>
+    <button onTap="deleteAll">Delete all</button>
+  </view>
+</view>
+
+<!-- <view a:for="{{ globalTodos }}">
+  {{`${item.name}, `}}
+</view> -->

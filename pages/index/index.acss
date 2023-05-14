@@ -1,0 +1,39 @@
+.main-con{
+  background-color: gray;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.con{
+  background-color: darkgray;
+  padding: 0.3rem 0.5rem;
+}
+.todo-header{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.todo-form{
+  padding: 10px;
+  background-color: gray;
+  margin-top: 20px;
+  display: flex;
+  gap: 3px;
+}
+.add-input{
+  padding: 11px;
+}
+.submit-btn{
+  padding: 0 10px;
+}
+.todo-list{
+  background-color: gray;
+  padding: 10px;
+  margin-top: 20px;
+  height: 400px;
+  overflow-y: scroll;
+}
+ 

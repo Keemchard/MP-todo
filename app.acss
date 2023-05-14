@@ -1,0 +1,9 @@
+page {
+  flex: 1;
+  display: flex;
+  background: #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
