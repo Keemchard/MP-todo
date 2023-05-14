@@ -31,4 +31,4 @@
   </view>
 </view>
 
- //TODO prob: the page doesnt automatically rerender/update whenever i create or delete todo lol
+ <!-- //TODO prob: the page doesnt automatically rerender/update whenever i create or delete todo lol -->
