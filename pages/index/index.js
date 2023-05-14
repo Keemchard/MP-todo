@@ -1,15 +1,12 @@
 const app = getApp()
-// var globalPersonDataObj = app.globalPersonData
 var globalTodos = app.todos
 
 const setTodos = (todos)=>{
-  return my.setStorageSync({
+    return my.setStorageSync({
     key: 'todos',
     data: todos || []
   })
 }
-
-console.log(globalTodos)
 
 Page({ 
   data: {globalTodos},
@@ -20,18 +17,21 @@ Page({
     setTodos(newSetOfTodos)
     console.log(setTodos(newSetOfTodos))
  
-    // my.reLaunch({
-    //   url: '/pages/index/index'
-    // });
-    this.setData({ globalTodos: newSetOfTodos }, console.log(newSetOfTodos)) 
-  },
-  // deleteTodo(){ 
-  //   const filteredTodos = globalTodos.filter((todo)=>{
-  //       return todo.id > 0;
-  //   })
-  //   console.log(filteredTodos)
-  //   setTodos(filteredTodos)
-  // }
+    
+    // this.setData({ globalTodos: newSetOfTodos }, console.log(newSetOfTodos)) 
+
+    
+  }, 
+  deleteTodo(event){ 
+    const id = event.target.dataset.id;
+    const filteredTodos = globalTodos.filter((todo)=>{
+        return id !== todo.id ; 
+    })
+    console.log(id)
+    console.log(filteredTodos)
+    setTodos(filteredTodos)
+    this.setData({globalTodos: filteredTodos})
+  }
   // deleteAll() {
   //   my.clearStorageSync();
   //   console.log(globalTodos)

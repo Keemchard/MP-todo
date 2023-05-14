@@ -36,4 +36,15 @@
   height: 400px;
   overflow-y: scroll;
 }
- 
+.todo-item{
+  background-color: darkgray;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.del-btn{
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}

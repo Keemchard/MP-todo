@@ -1,11 +1,6 @@
 
 let todos = my.getStorageSync({ key: 'todos' });
-// console.log(todos.data)
-//  my.alert({
-//     content: JSON.stringify(todos.data),
-//  });
-
-// const todoData = [{title:"hey"},{title:"you"}]
+ 
 const todoData = todos.data
 
 App({
